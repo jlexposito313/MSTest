@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+     PRÁCTICA: Práctica 2
+
+      AUTOR: José Luis Expósito Lopera
+
+      CLASE: 1º ASIR-C
+
+      TÍTULO DE LA PRÁCTICA: Diseño Web Estático (HTML+CSS)
+
+      FECHA: 11/01/2021
+-->
+<html lang="es">    <!-- Determinamos el idioma del documento HTML -->
+	<head>
+        <meta charset="UTF-8"/>     <!-- Definimos la codificación de caracteres del documento HTML -->
+        <meta name="author" content="José Luis Expósito Lopera"/>   <!-- Definimos al autor del documento HTML -->
+        <meta name="keywords" lang="es" content="Galicia, Lugo, COVID-19, coronavirus, contagios, evolución covid19, pandemia"/>    <!-- Definimos palabras clave del documento HTML -->
+        <meta name="description" lang="es" content="Evolución de la pandemia del coronavirus en la provincia gallega de Lugo"/>     <!-- Establecemos una descripción al documento HTML -->
+		<title>Inicio</title>   <!-- Damos un titulo al documento HTML -->
+        <link rel="icon" href="imagenes/favicon.png" type="image/png"/>     <!-- Establecemos el favicon de nuestra web y con "href" escogemos la ruta hasta la imagen -->
+        <link rel="stylesheet" type="text/css" href="estilo/estilos.css">
+	</head>
+	<body>
+        <header>    <!-- Definimos un contenedor de cabecera -->
+            <h1>Evolución de Covid-19 en Lugo</h1>      <!-- Establecemos un encabezado -->
+
+        </header>
+
+        <nav>
+            <ul>    <!-- Hacemos una lista desordenada, dentro de ella colocamos los ítems con "li" -->
+                <li><a href="index.html" target="_self">Inicio</a></li>     <!-- Establecemos un hipervínculo hacia otra página. El destino del enlace lo determina href. Además añadimos que se abra en la misma pestaña con target="self" -->
+                <li><a href="páginas/EvoluciónCovid.html" target="_self">Evolución del Covid-19 tras el 1º confinamiento</a></li>
+                <li><a href="páginas/DesarrolloCovid.html" target="_self">Desarrollo del Covid-19</a></li>
+                <li><a href="páginas/SecuelasCovid.html" target="_self">Secuelas del Covid-19 en Lugo</a></li>
+                <li><a href="páginas/FormularioCovid.html" target="_self">Formulario Covid-19</a></li>
+            </ul>
+        </nav>
+
+        <div class="contenedor">
+        <section>   <!-- Definimos un espacio de sección -->
+            <h2 class="sech">Inicio</h2>
+
+            <article>   <!-- Definimos un artículo dentro de la sección -->
+                <h2>¿Qué es el Covid-19?</h2>
+                <p>Es una enfermedad infecciosa causada por un coronavirus recientemente descubierto conocido como <em>SARS-CoV-2</em>. Se transmite principalmente a través de las gotículas generadas cuando una persona infectada tose, estornuda o espira. Nos podemos infectar al inhalar el virus si esta cerca de una persona con Covid-19 o si, tras tocar una superficie contaminada, se toca los ojos, nariz o boca. Las personas que se contagian empiezan a presentar síntomas en un plazo de <em>cinco a seis días</em> desde que se infectan, aunque pueden tardar hasta <em>catorce días</em>.</p>      <!-- Definimos un párrafo -->
+                <p class="cc">Información extraída de la página oficial de la Organización Mundial de la Salud. Licencia CC BY-NC-SA.</p>   <!-- Le damos la clase de Creative Commons al párrafo para diferenciarlo -->
+            </article>
+
+            <article>
+                <h2>Origen del Covid-19</h2>
+                <p>Los hospitales de Wuhan detectaron los primeros casos de la nueva enfermedad a mediados de <em>diciembre del 2019</em>. Estos primeros contagios se dieron en el ámbito del Mercado Mayorista de Mariscos del Sur de China de <em>Wuhan</em>. Los primeros casos fueron diagnosticados como una neumonía de origen desconocido. Estos fueron los que iniciaron las alertas sanitarias que llevaron a que en la primera semana de enero se identificase como causante de la enfermedad desconocida a un nuevo coronavirus, al que se le llamó <em>2019-nCoV</em>.</p>
+                <p class="cc">Información extraída de la página web de Wikipedia. Licencia CC BY-SA.</p>
+            </article>
+
+            <article>
+                <h2>Síntomas que puede generar el Covid-19</h2>
+                <p>El Covid-19 puede generar varios tipos de síntomas. Se pueden clasificar en dos clases, la primera clase son los habituales, y la segunda clase son los más graves.</p>
+                    <ol id="Sintomas">    <!-- Establecemos una lista ordenada para la que el 1 se referirá a los síntomas habituales y el 2 a los síntomas graves -->
+                        <li class="Sintoma">Síntomas habituales:
+                            <dl>    <!-- Establecemos una lista de definición que contendrá los distintos tipos de síntomas con "dt" y una definición de los mismos con "dd" -->
+                                <dt>Fiebre:</dt><dd>Es el aumento temporal en la temperatura del cuerpo a causa de alguna enfermedad.</dd>
+                                <dt>Tos seca:</dt><dd>Es un tipo de tos irritante y molesta en la que no se elimina mucosidad, solo se expulsa aire.</dd>
+                                <dt>Cansancio:</dt><dd>Es una sensación extrema de agotamiento o falta de energía.</dd>
+                                <dt>Anosmia:</dt><dd>Es la pérdida grave del olfato y también suele ir asociada a la pérdida del sabor.</dd>
+                            </dl>  
+                        </li>
+                        <li class="Sintoma">Síntomas graves:
+                            <dl>
+                                <dt>Dificultad respiratoria:</dt><dd>Es una afección que implica una sensación de dificultad al respirar o la sensación de no estar recibiendo suficiente aire.</dd>
+                                <dt>Dolor en el pecho:</dt><dd>Es una presión que se aplica sobre la zona del tórax.</dd>
+                                <dt>Deficiencia motriz:</dt><dd>Es una incapacidad de algún órgano del aparato locomotor que provoca al individuo que la padece el no poderse mover correctamente.</dd>
+                            </dl> 
+                        </li>
+                    </ol>
+                <p class="cc">Información extraída de la página web de Wikipedia. Licencia CC BY-SA.</p>
+            </article>
+
+        </section>
+        </div>
+
+        <aside>     <!-- Hacemos una parte con contenido extra -->
+            <h3>Enlaces externos relacionados:</h3>
+            <ul class="aside">
+                <li><a href="https://www.sergas.gal/" target="_blank">      <!-- Definimos la ruta del contenido relacionado y añadimos que se abra en una nueva pestaña con target="_blank" -->
+                    <img src="imagenes/VirusA434.jpg" alt="Dibujo virus Covid-19 en amarillo" width="75" height="75"/>Novedades sanitarias en Galicia</a>   <!-- Añadimos una imagen, establecemos la ruta hacia la imagen y agregamos un texto alternativo a nuestra imagen. También le damos un tamaño mediante "width" y "height" -->
+                    <p class="cc">La web enlazada pertenece al Servizo Galego de Saúde de la Xunta de Galicia</p>
+                </li>
+
+                <li><a href="https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov/situacionActual.htm" target="_blank">
+                    <img src="imagenes/VirusB434.jpg" alt="Dibujo virus Covid-19 en azul" width="75" height="75"/>Situación actual en sanidad de España</a>
+                    <p class="cc">La web enlazada pertenece al Ministrio de Sanidad del Gobierno de España</p>
+                </li>
+
+                <li><a href="https://www.mscbs.gob.es/ciudadanos/ene-covid/faqs.htm" target="_blank">
+                    <img src="imagenes/VirusR434.jpg" alt="Dibujo virus Covid-19 en morado" width="75" height="75"/>Preguntas y respuestas frecuentes sobre el Covid-19</a>
+                    <p class="cc">La web enlazada pertenece al Ministrio de Sanidad del Gobierno de España</p>
+                </li>
+            </ul>
+        </aside>
+
+        <footer>    <!-- Hacemos un pie de página -->
+            <p class="footer">Contacto:</p><p>jlexposito313@ieszaidinvergeles.org</p>
+            <p class="footer">Autor:</p><p>José Luis Expósito Lopera</p>
+            <p class="footer"><img src="imagenes/CCBYSA.png" alt="Licencia Creative Commons Reconocimiento-CompartirIgual"/>CC BY-SA 2020</p>
+        </footer>
+	</body>
+</html>
