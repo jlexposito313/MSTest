@@ -1,0 +1,344 @@
+/* Importamos un estilo mediante la url */
+@import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
+
+/* Body */
+body{
+    margin: 0px;    /* Agregamos que el margen sea de 0 píxeles*/
+    background-color: lightyellow;      /* Añadimos un color de fondo para el body */
+    font-family: 'Yusei Magic', sans-serif;     /* Aplicamos el estilo anteriormente importado */
+}
+
+/* Header */
+header{
+    background-image: url("../imagenes/Banner.jpg");    /* Utilizamos una imagen para el fondo, con url definimos la ruta hacia la imagen */
+    background-size: 100%;      /* Definimos que el tamaño del fondo sea del 100% */
+    height: 300px;      /* Establecemos que la altura sea de 300 píxeles */
+    background-position: center;    /* Hacemos que el fondo quede centrado */
+    padding-top: 10px;      /* Agregamos un relleno superior de 10 píxeles */
+}
+
+/* H1 */
+h1{
+    margin-top: 5%;     /* Agregamos un margen superior del 5% */
+    color: purple;      /* Seleccionamos el color morado para los títulos de nivel 1 */
+    text-align: center;     /* Hacemos que el texto este centrado */
+    font-family: fantasy;       /* Elegimos la fuente de letra */
+    text-shadow: 2px 5px 3px violet;    /* Añadimos una sombra de color violeta y establecemos sus medidas */
+    font-size: 4em;     /* Establecemos el tamaño de la fuente a 4 unidades em */
+}
+
+/* Barra navegación */
+nav{
+    width: 98.1%;   /* Establecemos un ancho al nav */
+    position: sticky;   /* Hacemos que la barra de navegación se quede pegada al bajar */
+    top: 0px;   /* Establecemos que la barra de navegación no deje un espacio en píxeles en la parte superior */
+    text-align: center;
+    background-color: rgb(240, 240, 168);
+    margin-top: 0%;    
+    margin-bottom: 0px;     /* Establecemos que el margen inferior sea de 0 píxeles */
+    margin-left: 0px;       /* Establecemos que el margen izquierdo sea de 0 píxeles */
+    padding: 10px;      /* Establecemos que el relleno sea de 10 píxeles */
+    border: 5px;    /* Agregamos un borde de 5 píxeles */
+    border-style: double;   /* Añadimos que el estilo al borde, con double establecemos que tenga un doble borde */
+}
+
+/* Estilos para la lista desordenada */
+nav ul{
+    padding: 7px;   /* Añadimos un relleno de 7 píxeles */
+    list-style-type: none;  /* Eliminamos el estilo de la lista */
+}
+
+/* Estilos para los apartados de la lista */
+nav li{
+    background-color: wheat;
+    display: inline;    /* Establecemos la visualización del elemento de forma que sea en línea */
+    margin-left: 0.5%;  /* Añadimos un margen izquierdo del 0.5% */
+    margin-right: 0.5%; /* Añadimos un margen derecho del 0.5% */
+    padding: 1.2%;      /* Establecemos un relleno del 1.2% */
+    border-radius: 10px;    /* Añadimos que el borde sea curvo de 10 píxeles */
+    border-style: outset;
+}
+
+/* Estilos para los apartados de la lista cuando el cursor esta encima */
+nav li:hover{       
+    background-color: indianred;
+    border-style: dashed;
+}
+
+/* Estilos para los enlaces visitados y no visitados */
+nav a, nav a:visited{
+    text-decoration: none;  /* Suprime la línea bajo los enlaces */
+    color: black;
+    font-weight: bold;      /* Añadimos que la letra sea más gruesa */
+    font-size: 1.2em;
+}
+
+/* Estilos para los enlaces una vez que se activan */
+nav a:active{
+    color: white;
+}
+
+/* Contenedor */
+.contenedor{
+    display: inline-block;      /* Establecemos la visualización del elemento de forma que sea bloques en línea */
+    width: 69.5%;
+    padding-left: 15px;
+}
+
+/* H2 de la sección */
+.sech{
+    font-weight: bolder;
+    text-align: center;
+    font-size: 2em;
+    padding: 1%;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 25px;
+    border-bottom: 5px solid rgb(106, 161, 196);    /* Establecemos el borde inferior */
+    background-color: rgb(157, 202, 216);
+}
+
+/* H2 del artículo */
+article h2{
+    padding: 1%;
+    margin-right: 50%;
+    border-left: 10px solid indianred;      /* Agregamos un borde a la izquierda */
+    border-style: none none none ridge;     /* Definimos el estilo del borde de la izquierda */
+    background-image: linear-gradient(270deg, lightyellow, lightblue);
+}
+
+/* Parrafos del artículo */
+article p{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* Marcador */
+em{
+    font-style: normal;     /* Agregamos que el estilo que use sea el normal */
+    font-weight: bolder;
+}
+
+/* Aside */
+aside{
+    float: right;   /* Establecemos que el elemento sea flotante en la parte de la derecha */
+    width: 25%;
+    display: inline-block;
+    background-color: lightgoldenrodyellow;
+    border: 2px solid lightsalmon;
+    border-radius: 7px;
+}
+
+aside h3{
+    text-align: center;
+}
+
+/* Lista aside */
+.aside{
+    list-style-type: circle;    /* Añadimos el estilo circular a la lista */
+}
+
+/* Imagen aside */
+ul li img{
+    border-radius: 50px;
+    border: 2px solid lightblue;
+    padding: 5px;
+}
+
+/* Enlaces */
+.aside a:link{
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;      /* Indicamos que no presente decoración */
+}
+
+/* Enlace visitado */
+.aside a:visited{
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/* Enlace visitado */
+.aside a:hover{
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+}
+
+/* Enlace cuando se activa */
+.aside a:active{
+    color: orangered;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+/* Creative Commons */
+section .cc{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: rgb(204, 84, 84);
+    text-align: end;    /* Indicamos que el texto se alinee al final */
+}
+
+.cc{
+    font-family: "Lucida Console", "Courier New", monospace;
+    color: green;
+}
+
+/* Footer */
+footer{
+    margin-top: 20px;
+    padding: 0.7%;
+    text-align: center;
+    background-image: linear-gradient(0deg, beige, lightblue);      /* Con linear-gradient establecemos que haya un degradado del fondo entre dos colores */
+    color: black;
+    border-color: royalblue;    /* Establecemos un color para el borde */
+    border-style: dotted none none none;    /* Añadimos que el estilo para el borde sea visible en la parte superior */
+}
+
+.footer{
+    font-weight: 600;
+}
+
+/* Inicio - Síntomas */
+#Sintomas{
+    list-style: upper-roman;    /* Añadimos que la lista presente números romanos */
+}
+
+.Sintoma{
+    font-weight: bold;
+}
+
+#Sintomas dl{
+    font-weight: normal;
+}
+
+/* Lista de definición */
+dl{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;      /* Establecemos la visualización del elemento de forma flexible */
+    flex-flow: row wrap;
+    border: solid rgb(49, 49, 49);
+    border-width: 1px 1px 0 0;  /* Definimos la anchura de los bordes superior y derecho */
+}
+
+/* Término a definir */
+dt{
+    flex-basis: 20%;    /* Determinamos el tamaño del elemento */
+    padding: 2px 4px;
+    background: rgb(49, 49, 49);
+    text-align: right;
+    color: white;
+}
+
+/* Definición del término */
+dd{
+    flex-basis: 70%;
+    flex-grow: 1;   /* Determinamos el factor de crecimiento del elemento */
+    margin: 0;
+    padding: 2px 4px;
+    border-bottom: 1px solid rgb(49, 49, 49);
+}
+
+/* Tabla */
+table{
+    margin-top: 2%;
+    margin-left: 22%;
+    margin-bottom: 2%;
+    width: 50%;
+    border: 5px solid indianred;
+    border-collapse: separate;      /* Establecemos que los bordes de la tabla se separen */
+    border-spacing: 15px 5px;       /* Añadimos espaciado en los bordes de la tabla */
+    border-radius: 7px;
+    text-align: center;
+}
+
+/* Descripción de la tabla */
+caption{
+    margin-right: 5%;
+    margin-left: 5%;
+    font-size: 1.5em;
+    border-radius: 15px;
+    border-bottom-right-radius: 1px;    /* Establecemos el radio del borde inferior derecho */
+    border-bottom-left-radius: 1px;     /* Establecemos el radio del borde inferior izquierdo */
+    border-top: 5px solid indianred;    /* Establecemos el borde superior */
+    background-color: rgb(241, 237, 237);
+}
+
+/* Celda de la tabla */
+td{
+    border: 2px solid green;
+    background-color: lightgreen;
+}
+
+/* Remarcado cuando el raton esta encima */
+table td:hover{
+    background-color: lightsalmon;
+}
+
+/* Celda de encabezado */
+th{
+    border: 5px solid lightblue;
+    background-color: beige;
+    color: darkblue;
+}
+
+/* Formulario Covid */
+fieldset{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 80%;
+    border: 2px solid rgb(247, 211, 181);
+    border-radius: 10px;
+    background-color: rgb(240, 240, 199);
+}
+
+/* Campo de texto, número, fecha, área de texto y selector */
+input[type=text], input[type=number], input[type=date], textarea, select{
+    padding: 0.5%;
+    margin: 8px 0;
+    border: 2px solid salmon;
+    border-radius: 7px;
+    background-color: rgb(243, 177, 170);
+    color: black;
+}
+
+/* Texto provisional de ejemplo */
+::placeholder{
+    color: black;
+}
+
+/* Ratón sobre las opciones del selector */
+option:hover{
+    background-color: lightsalmon;
+}
+
+/* Título para los campos */
+legend{
+    border-radius: 5px;
+    background-color: rgb(247, 211, 181);
+}
+
+/* Botón enviar */
+input[type=submit]{
+    background-color: lightgreen;
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    border: 2px solid green;
+    border-radius: 25px;
+}
+
+/* Botób restablecer */
+input[type=reset]{
+    background-color: indianred;
+    color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    border: 2px solid red;
+    border-radius: 25px;
+}

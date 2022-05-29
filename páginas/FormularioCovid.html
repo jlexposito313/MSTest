@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="José Luis Expósito Lopera"/>
+        <meta name="keywords" lang="es" content="Galicia, Lugo, COVID-19, coronavirus, contagios, evolución covid19, pandemia"/>
+        <meta name="description" lang="es" content="Evolución de la pandemia del coronavirus en la provincia gallega de Lugo"/>
+		<title>Formulario Covid-19</title>
+        <link rel="icon" href="../imagenes/favicon.png" type="image/png"/>
+        <link rel="stylesheet" type="text/css" href="../estilo/estilos.css">
+	</head>
+	<body>
+        <header>
+            <h1>Evolución de Covid-19 en Lugo</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html" target="_self">Inicio</a></li>
+                <li><a href="EvoluciónCovid.html" target="_self">Evolución del Covid-19 tras el 1º confinamiento</a></li>
+                <li><a href="DesarrolloCovid.html" target="_self">Desarrollo del Covid-19</a></li>
+                <li><a href="SecuelasCovid.html" target="_self">Secuelas del Covid-19 en Lugo</a></li>
+                <li><a href="FormularioCovid.html" target="_self">Formulario Covid-19</a></li>
+            </ul>
+        </nav>
+        
+        <div class="contenedor">
+        <section>
+            <h2 class="sech">Formulario Covid-19</h2>
+
+            <article>
+            <p>Rellenar el siguiente formulario para determinar si usted está en riesgo de padecer de Covid-19. El envío se realizara por correo y se le notificara con el resultado.</p>
+
+            <form action="mailto:jlexposito313@ieszaidinvergeles.org" method="post">    <!-- Creamos un formulario y detallamos que el formulario se envíe por correo siguiendo el método "post" -->
+                <fieldset>      <!-- Agrupamos los elementos relacionados del formulario en un campo -->
+                    <legend>Complete con sus datos personales</legend>      <!-- Establecemos una titulo para el campo -->
+                    <div>
+                        <label for="nombre">Nombre</label>  <!-- Definimos la información que se necesita para completar la casilla -->
+                        <input type="text" id="nombre" size="15" name="Nombre" tabindex="1"/>  <!-- Hacemos una casilla para completarla con texto (esto se especifica en el type). Con size marcamos el tamaño de la casilla. Con tabindex marcamos un orden para que se vaya seleccionando cada vez que pulsamos el boton de tabulación -->
+                    </div>
+                    <div>
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" size="30" name="Apellidos" tabindex="2"/>
+                    </div>
+                    <div>
+                        <label for="localidad">Localidad</label>
+                        <input type="text" id="localidad" size="15" name="Localidad" tabindex="3"/>
+                    </div>
+                    <div>
+                        <label for="codigopostal">Código postal</label>
+                        <input type="number" id="codigopostal" min="1001" max="52080" name="CodigoPostal" tabindex="4"/>    <!-- En este caso usamos type="number" para especificar que se usen números. Con "min" establecemos el valor mínimo y con "max" el valor máximo -->
+                    </div>
+                    <div>
+                        <label for="fechanacimiento">Fecha de nacimiento </label>
+                        <input type="date" id="fechanacimiento" name="FechaNacimiento" tabindex="5"/>     <!-- Usando type="date" especificamos una fecha -->
+                    </div>
+                </fieldset> 
+    
+                <fieldset>
+                    <legend>Seleccione su sexo</legend>
+                    <input type="radio" id="masculino" name="sexo" value="Masculino" tabindex="6"/>  <!-- Utilizamos type="radio" para especificar un botón con selección única -->
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="sexo" value="Femenino"/>
+                    <label for="femenino">Femenino</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Marque las casillas con la opción que padezca</legend>
+                    <div>
+                        <label for="fiebre">He tenido fiebre en los ultimos 14 días.</label>    <!-- Usamos type="checkbox" para establecer un bloque de verificación -->
+                        <input type="checkbox" id="fiebre" name="Fiebre" tabindex="7"/>
+                    </div>
+                    <div>
+                        <label for="respiratorias">He tenido dificultades respiratorias.</label>
+                        <input type="checkbox" id="respiratorias" name="Respiratorias" tabindex="8"/>
+                    </div>
+                    <div>
+                        <label for="sintomas">He tenido síntomas como tos persistente, dolor de cabeza, congestión nasal o dolor de garganta.</label>
+                        <input type="checkbox" id="sintomas" name=" Síntomas" tabindex="9"/>
+                    </div>
+                    <div>
+                        <label for="condición">Tengo alguna afección del pulmón, corazón, riñón o diabetes.</label>
+                        <input type="checkbox" id="condición" name=" Condición" tabindex="10"/>
+                    </div>
+                    <div>
+                        <label for="otrosintoma">Rellene el siguiente recuadro si tiene otro síntoma:</label>
+                        <div>
+                        <textarea id="otrosintoma" cols="50" rows="7" placeholder="Por ejemplo, he tenido fatiga persistente." name="OtroSíntoma" tabindex="11"></textarea>   <!-- Establecemos un cuadro de texto para completar. Mediante "cols" y "rows" asignamos el tamaño. Con "placeholder" establecemos un texto de ejemplo -->
+                        </div>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Seleccione la opción que sea la más adecuada a su caso</legend>
+                    <label>Tiempo desde su ultimo viaje:</label>
+                    <div>
+                        <select size="4" name="Viaje" tabindex="12">      <!-- Hacemos un cuadro de selección. Con "size" ajustamos las opciones que se presentan -->
+                            <option value="No">No he  viajado</option>      <!-- Mediante option agregamos una opción a seleccionar. Usando "selected=selected" marcamos la opción por defecto -->
+                            <option value="7días">7 días</option>
+                            <option value="14días">14 días</option>
+                            <option value="21días">21 días</option>
+                        </select>
+                    </div>
+
+                    <label>¿Ha estado en contacto con alguna persona que haya tenido síntomas?</label>
+                    <div>
+                        <input type="radio" id="si" name="Contacto" value="Si" tabindex="13"/>
+                        <label for="si">Si</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="no" name="Contacto" value="No" tabindex="14"/>
+                        <label for="no">No</label>
+                    </div>
+                </fieldset>
+
+                    <div>
+                        <input type="submit" value="Enviar datos" tabindex="15"/>     <!-- Creamos un botón para enviar el formulario -->
+                        <input type="reset" value="Restablecer" tabindex="16"/>       <!-- Creamos un botón para reiniciar el formulario -->
+                    </div>
+            </form>
+            </article>
+        </section>
+        </div>
+
+        <aside>
+            <h3>Enlaces externos relacionados:</h3>
+            <ul class="aside">
+                <li><a href="https://www.sergas.gal/" target="_blank">
+                    <img src="../imagenes/VirusA434.jpg" alt="Dibujo virus Covid-19 en amarillo" width="75" height="75"/>Novedades sanitarias en Galicia</a>
+                    <p class="cc">La web enlazada pertenece al Servizo Galego de Saúde de la Xunta de Galicia.</p>
+                </li>
+
+                <li><a href="https://www.mscbs.gob.es/profesionales/saludPublica/ccayes/alertasActual/nCov/situacionActual.htm" target="_blank">
+                    <img src="../imagenes/VirusB434.jpg" alt="Dibujo virus Covid-19 en azul" width="75" height="75"/>Situación actual en sanidad de España</a>
+                    <p class="cc">La web enlazada pertenece al Ministrio de Sanidad del Gobierno de España.</p>
+                </li>
+
+                <li><a href="https://www.mscbs.gob.es/ciudadanos/ene-covid/faqs.htm" target="_blank">
+                    <img src="../imagenes/VirusR434.jpg" alt="Dibujo virus Covid-19 en morado" width="75" height="75"/>Preguntas y respuestas frecuentes sobre el Covid-19</a>
+                    <p class="cc">La web enlazada pertenece al Ministrio de Sanidad del Gobierno de España.</p>
+                </li>
+            </ul>
+        </aside>
+
+        <footer>
+            <p class="footer">Contacto:</p><p>jlexposito313@ieszaidinvergeles.org</p>
+            <p class="footer">Autor:</p><p>José Luis Expósito Lopera</p>
+            <p class="footer"><img src="../imagenes/CCBYSA.png" alt="Licencia Creative Commons Reconocimiento-CompartirIgual"/>CC BY-SA 2020</p>
+        </footer>
+	</body>
+</html>
