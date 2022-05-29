@@ -4,7 +4,7 @@
 /* Body */
 body{
     margin: 0px;    /* Agregamos que el margen sea de 0 píxeles*/
-    background-color: purple;      /* Añadimos un color de fondo para el body */ /* lightyellow */
+    background-color: lightyellow;      /* Añadimos un color de fondo para el body */ /* lightyellow */
     font-family: 'Yusei Magic', sans-serif;     /* Aplicamos el estilo anteriormente importado */
 }
 
